@@ -11,6 +11,10 @@ I build AI agents, document intelligence systems, and practical machine learning
 
 </div>
 
+<div align="center">
+  <img width="100%" alt="Original electromagnetic city anime-inspired banner" src="./assets/electromagnetic-city.svg">
+</div>
+
 ## About me
 
 - Exploring **AI agents**, **RAG**, and reliable long-running workflows
