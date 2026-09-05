@@ -1,0 +1,43 @@
+name: Generate contribution graph art
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/contribution-graph-art.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-graph-art
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Generate Tetris contribution graph
+        uses: leereilly/contribution-graph-art@v1
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          animation_mode: tetromino
+          tetromino_count: "7"
+          palette: auto
+          animation_duration: "9"
+          output_path: dist/contribution-graph-tetris.svg
+
+      - name: Publish animation
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          force_orphan: true
