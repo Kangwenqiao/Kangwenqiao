@@ -1,4 +1,4 @@
-name: Generate contribution graph art
+name: Generate contribution snake
 
 on:
   schedule:
@@ -8,13 +8,13 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/contribution-graph-art.yml"
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: contribution-graph-art
+  group: contribution-snake
   cancel-in-progress: true
 
 jobs:
@@ -23,18 +23,15 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Generate Tetris contribution graph
-        uses: leereilly/contribution-graph-art@v1
+      - name: Generate light and dark Snake animations
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          animation_mode: tetromino
-          tetromino_count: "7"
-          palette: auto
-          animation_duration: "9"
-          output_path: dist/contribution-graph-tetris.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publish animation
+      - name: Publish animations
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
