@@ -38,20 +38,8 @@ I build AI agents, document intelligence systems, and practical machine learning
   <img alt="LaTeX" src="https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white">
 </p>
 
-## Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kangwenqiao/Kangwenqiao/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kangwenqiao/Kangwenqiao/output/github-contribution-grid-snake.svg">
-    <img alt="Snake eating Wenqiao's GitHub contribution graph" src="https://raw.githubusercontent.com/Kangwenqiao/Kangwenqiao/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
-
 ## 3D Contribution Calendar
 
 <div align="center">
   <img width="100%" alt="Wenqiao's animated 3D GitHub contribution calendar" src="./profile-3d-contrib/profile-green-animate.svg">
 </div>
-
-<sub>Both contribution views are regenerated every day from my latest GitHub activity.</sub>
