@@ -21,6 +21,10 @@ A local, OpenAI-compatible rewriting service. `Python` `Ollama`
 
 ### Contributions, in depth
 
-<img width="100%" alt="Wenqiao's animated 3D GitHub contribution calendar" src="./profile-3d-contrib/profile-green-animate.svg">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kangwenqiao/Kangwenqiao/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kangwenqiao/Kangwenqiao/output/github-contribution-grid-snake.svg">
+  <img width="100%" alt="A snake eating Wenqiao's GitHub contribution grid" src="https://raw.githubusercontent.com/Kangwenqiao/Kangwenqiao/output/github-contribution-grid-snake.svg">
+</picture>
 
 <p align="right"><sub>Generated daily from live GitHub activity.</sub></p>
